@@ -22,7 +22,7 @@ local function onTalkKaqemeex()
 		chatnpc("Let's try an example Attack potion: The first ingredient is Guam lead; the next is Eye of Newt.")
 		chatnpc("Mix these in your water-filled vial, and you will produce an Attack potion. Drink this potion to increase your Attack level.")
 		chatnpc("Different potions also require different Herblore levels before you can make them.")
-		DruidicRitual = 4
+		%DruidicRitual = 4
 		player.CompleteQuest(18)
 		player.GiveXp(skills.herblore, 250)
 		return
