@@ -1,4 +1,8 @@
 -- Eadgar's Ruse
+--
+-- Sanfew requires a rare herb for the next part of the purifying ritual.
+-- Travel back to the Troll Stronghold to find this herb that the trolls use as an ingredient for their favourite dish.
+--
 -- Start Location: Talk to Sanfew in Taverley
 
 -- Sanfew

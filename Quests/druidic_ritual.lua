@@ -1,4 +1,8 @@
 -- Druidic Ritual
+--
+-- The druids have decided to join the defence of Taverley and Burthorpe, and they're looking to get their god on their side.
+-- By concocting a potion with the help of their herbal specialist, you'll gain Guthix's favour and send the trolls packing.
+--
 -- Start Location: The Druid's circle in Taverley
 
 -- Kaqemeex: A wise druid
@@ -234,19 +238,19 @@ RegisterNPCAction("Sanfew", 0, onTalkSanfew)
 --------------------------------------------------
 
 local function onUseItemCauldron(item)
-	if item.GetId == 2132 then
+	if item.GetId() == 2132 then
 		chatmessage(0, "You dip the raw beef in the cauldron.")
 		player.RemoveItem(2132, 1)
 		player.GetItem(522, 1)
-	elseif item.GetId == 2134 then
+	elseif item.GetId() == 2134 then
 		chatmessage(0, "You dip the raw bear meat in the cauldron.")
 		player.RemoveItem(2134, 1)
 		player.GetItem(523, 1)
-	elseif item.GetId == 2136 then
+	elseif item.GetId() == 2136 then
 		chatmessage(0, "You dip the raw rat meat in the cauldron.")
 		player.RemoveItem(2136, 1)
 		player.GetItem(524, 1)
-	elseif item.GetId == 2138 then
+	elseif item.GetId() == 2138 then
 		chatmessage(0, "You dip the raw chicken in the cauldron.")
 		player.RemoveItem(2138, 1)
 		player.GetItem(525, 1)
@@ -256,4 +260,4 @@ local function onUseItemCauldron(item)
 	return
 end
 
-RegisterNPCUseItem("ThunderCauldron", onUseItemCauldron)
+RegisterObjectAction("ThunderCauldron", 1, onUseItemCauldron)
