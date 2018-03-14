@@ -118,8 +118,15 @@ RegisterNPCAction("Sir Amik Varze", 0, onAmikTalk)
 -------------------------------------------------
 
 local function onOpenSturdyDoor()
-	-- If player has Iron Chainbody & Bronze Helm equipped
 	if player.IsEquipped(1101) and player.IsEquipped(1139) then
+		-- Open Door and make player walk inside, then close door automatically.
+	elseif player.IsEquipped(1165) and player.IsEquipped(1125) and player.IsEquipped(1077) then
+		-- Open Door and make player walk inside, then close door automatically.
+	elseif player.IsEquipped(14499) and player.IsEquipped(14497) and player.IsEquipped(14501) then
+		-- Open Door and make player walk inside, then close door automatically.
+	elseif player.IsEquipped(14494) and player.IsEquipped(14492) and player.IsEquipped(14490) then
+		-- Open Door and make player walk inside, then close door automatically.
+	elseif player.IsEquipped(28912) and player.IsEquipped(28913) and player.IsEquipped(28914) and player.IsEquipped(28915) and player.IsEquipped(28916) then
 		-- Open Door and make player walk inside, then close door automatically.
 	else
 		chatnpc("Hey! You can't come in here! This is a high security military installation!", GUARD_NPC_ID)
@@ -164,8 +171,23 @@ RegisterObjectAction("Sturdy Door", 0, onOpenSturdyDoor)
 -------------------------------------------------
 
 local function onGuardTalk()
-	-- If player has Iron Chainbody & Bronze Helm equipped
 	if player.IsEquipped(1101) and player.IsEquipped(1139) then
+		chatnpc("Hey! Get back on duty!")
+		chatplayer("Uh...")
+		return
+	elseif player.IsEquipped(1165) and player.IsEquipped(1125) and player.IsEquipped(1077) then
+		chatnpc("Hey! Get back on duty!")
+		chatplayer("Uh...")
+		return
+	elseif player.IsEquipped(14499) and player.IsEquipped(14497) and player.IsEquipped(14501) then
+		chatnpc("Hey! Get back on duty!")
+		chatplayer("Uh...")
+		return
+	elseif player.IsEquipped(14494) and player.IsEquipped(14492) and player.IsEquipped(14490) then
+		chatnpc("Hey! Get back on duty!")
+		chatplayer("Uh...")
+		return
+	elseif player.IsEquipped(28912) and player.IsEquipped(28913) and player.IsEquipped(28914) and player.IsEquipped(28915) and player.IsEquipped(28916) then
 		chatnpc("Hey! Get back on duty!")
 		chatplayer("Uh...")
 		return
